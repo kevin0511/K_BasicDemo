@@ -15,6 +15,7 @@
 		0AE728AC1D9E0D21008CE93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE728AA1D9E0D21008CE93B /* LaunchScreen.storyboard */; };
 		0AE728B71D9E0D21008CE93B /* K_BasicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE728B61D9E0D21008CE93B /* K_BasicDemoTests.m */; };
 		0AE728C21D9E0D21008CE93B /* K_BasicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE728C11D9E0D21008CE93B /* K_BasicDemoUITests.m */; };
+		0AE728DC1D9E13E5008CE93B /* K_MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE728DB1D9E13E5008CE93B /* K_MainTabbarController.m */; };
 		F14C708CC832BDCA91ACC845 /* Pods_K_BasicDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4C7F04522E3E4923AF2875 /* Pods_K_BasicDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		0AE728BD1D9E0D21008CE93B /* K_BasicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = K_BasicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE728C11D9E0D21008CE93B /* K_BasicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = K_BasicDemoUITests.m; sourceTree = "<group>"; };
 		0AE728C31D9E0D21008CE93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE728DA1D9E13E5008CE93B /* K_MainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = K_MainTabbarController.h; sourceTree = "<group>"; };
+		0AE728DB1D9E13E5008CE93B /* K_MainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = K_MainTabbarController.m; sourceTree = "<group>"; };
 		1F4C7F04522E3E4923AF2875 /* Pods_K_BasicDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_BasicDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E5A116E0669709A76DF3DD /* Pods-K_BasicDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K_BasicDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-K_BasicDemo/Pods-K_BasicDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		563D0C87C52CF06223198C2D /* Pods-K_BasicDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K_BasicDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-K_BasicDemo/Pods-K_BasicDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,14 +111,9 @@
 		0AE7289B1D9E0D21008CE93B /* K_BasicDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0AE7289F1D9E0D21008CE93B /* AppDelegate.h */,
-				0AE728A01D9E0D21008CE93B /* AppDelegate.m */,
-				0AE728A21D9E0D21008CE93B /* ViewController.h */,
-				0AE728A31D9E0D21008CE93B /* ViewController.m */,
-				0AE728A51D9E0D21008CE93B /* Main.storyboard */,
-				0AE728A81D9E0D21008CE93B /* Assets.xcassets */,
-				0AE728AA1D9E0D21008CE93B /* LaunchScreen.storyboard */,
-				0AE728AD1D9E0D21008CE93B /* Info.plist */,
+				0AE728CF1D9E1078008CE93B /* Application */,
+				0AE728D11D9E1274008CE93B /* Pages */,
+				0AE728D01D9E1100008CE93B /* Components */,
 				0AE7289C1D9E0D21008CE93B /* Supporting Files */,
 			);
 			path = K_BasicDemo;
@@ -145,6 +143,101 @@
 				0AE728C31D9E0D21008CE93B /* Info.plist */,
 			);
 			path = K_BasicDemoUITests;
+			sourceTree = "<group>";
+		};
+		0AE728CF1D9E1078008CE93B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0AE7289F1D9E0D21008CE93B /* AppDelegate.h */,
+				0AE728A01D9E0D21008CE93B /* AppDelegate.m */,
+				0AE728A21D9E0D21008CE93B /* ViewController.h */,
+				0AE728A31D9E0D21008CE93B /* ViewController.m */,
+				0AE728A51D9E0D21008CE93B /* Main.storyboard */,
+				0AE728A81D9E0D21008CE93B /* Assets.xcassets */,
+				0AE728AA1D9E0D21008CE93B /* LaunchScreen.storyboard */,
+				0AE728AD1D9E0D21008CE93B /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		0AE728D01D9E1100008CE93B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0AE728DA1D9E13E5008CE93B /* K_MainTabbarController.h */,
+				0AE728DB1D9E13E5008CE93B /* K_MainTabbarController.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		0AE728D11D9E1274008CE93B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0AE728D21D9E12D6008CE93B /* Part-1 */,
+				0AE728D31D9E12E3008CE93B /* Part-2 */,
+				0AE728D41D9E12ED008CE93B /* Part-3 */,
+				0AE728D51D9E12F6008CE93B /* Part-4 */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		0AE728D21D9E12D6008CE93B /* Part-1 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE728D61D9E131B008CE93B /* Controller */,
+				0AE728D91D9E1337008CE93B /* ViewModel */,
+				0AE728D81D9E132C008CE93B /* View */,
+				0AE728D71D9E1325008CE93B /* Model */,
+			);
+			name = "Part-1";
+			sourceTree = "<group>";
+		};
+		0AE728D31D9E12E3008CE93B /* Part-2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part-2";
+			sourceTree = "<group>";
+		};
+		0AE728D41D9E12ED008CE93B /* Part-3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part-3";
+			sourceTree = "<group>";
+		};
+		0AE728D51D9E12F6008CE93B /* Part-4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part-4";
+			sourceTree = "<group>";
+		};
+		0AE728D61D9E131B008CE93B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0AE728D71D9E1325008CE93B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0AE728D81D9E132C008CE93B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0AE728D91D9E1337008CE93B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		146CEA76DCA53BAE2BD84481 /* Pods */ = {
@@ -351,6 +444,7 @@
 			files = (
 				0AE728A41D9E0D21008CE93B /* ViewController.m in Sources */,
 				0AE728A11D9E0D21008CE93B /* AppDelegate.m in Sources */,
+				0AE728DC1D9E13E5008CE93B /* K_MainTabbarController.m in Sources */,
 				0AE7289E1D9E0D21008CE93B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
