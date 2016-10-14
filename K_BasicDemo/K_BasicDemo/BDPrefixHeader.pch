@@ -1,0 +1,17 @@
+//
+//  K_PrefixHeader.pch
+//  K_BasicDemo
+//
+//  Created by kevin.zhang on 16/10/8.
+//  Copyright © 2016年 kevin.zhang. All rights reserved.
+//
+
+#ifndef K_PrefixHeader_pch
+#define K_PrefixHeader_pch
+
+#import "BDPrefixHeader.pch"
+#import "BDCommonAPIConstant.h"
+#import "BDCommonConstant.h"
+#import "BDDefaultHeader.h"
+
+#endif /* K_PrefixHeader_pch */
