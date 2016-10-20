@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BDBaseViewController.h"
 
-@interface BDHomeViewController : UIViewController
-
+@class BDServiceListModel;
+@interface BDHomeViewController : BDBaseViewController
+@property (nonatomic, strong) NSArray <BDServiceListModel *>*models;
 @end

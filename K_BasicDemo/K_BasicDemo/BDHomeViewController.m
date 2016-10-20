@@ -7,31 +7,26 @@
 //
 
 #import "BDHomeViewController.h"
-
+#import "BDCustomNoNetworkEmptyView.h"
+#import "BDCustomSlideViewController.h"
+#import "BDHomeAttentionViewController.h"
 @interface BDHomeViewController ()
-
+<
+BDCustomSlideViewControllerDelegate,
+BDCustomSlideViewControllerDataSource
+>
+@property (nonatomic, weak) UITableView *tableView;
+@property (nonatomic, weak) BDCustomSlideViewController * slideViewController;
+@property (nonatomic, weak) BDHomeAttentionViewController * attentionController;
 @end
 
 @implementation BDHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

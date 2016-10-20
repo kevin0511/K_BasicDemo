@@ -67,14 +67,15 @@ const static char loadingViewKey;
     return objc_getAssociatedObject(self, &loadingViewKey);
 }
 
-- (void)setloadingView:(UIView *)loadingView
+- (void)setLoadingView:(UIView *)loadingView
 {
     objc_setAssociatedObject(self, &loadingViewKey, loadingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)showLoadingViewWithFrame:(CGRect)frame {
     if (!self.loadingView) {
-        UIViewControllerLoadingView *loadingView = [[UIViewControllerLoadingView alloc] init];
+        UIViewControllerLoadingView *loadingView = [[UIViewControllerLoadingView alloc]
+                                                   init];
         self.loadingView = loadingView;
         loadingView.frame = frame;
         [self.view addSubview:self.loadingView];
